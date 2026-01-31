@@ -57,7 +57,7 @@ export class AuthService {
 		return this.saveSession(req, user)
 	}
 
-	// TODO: отправлять на фон об успешном логауте
+	// TODO: отправлять на фон об успешном logout
 	public async logout(req: Request, res: Response): Promise<void> {
 		return new Promise((resolve, reject) => {
 			req.session.destroy(err => {
