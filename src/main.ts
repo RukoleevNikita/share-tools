@@ -64,7 +64,7 @@ async function bootstrap() {
 	)
 
 	app.enableCors({
-		origin: config.getOrThrow<string>('ALLOWED_ORIGINS').split(','),
+		origin: config.getOrThrow<string>('ALLOWED_ORIGIN').split(','),
 		credentials: true,
 		exposedHeaders: ['set-cookie']
 	})
